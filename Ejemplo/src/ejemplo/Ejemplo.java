@@ -26,7 +26,7 @@ public class Ejemplo {
             
         } catch (SQLException ex) {
             Logger.getLogger(Ejemplo.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("No me conecte");
+            System.out.println(ex);
         }
         
        
