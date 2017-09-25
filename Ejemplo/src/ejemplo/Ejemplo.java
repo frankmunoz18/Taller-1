@@ -14,11 +14,11 @@ public class Ejemplo {
        Connection conexion;
        String url="jdbc:mysql://localhost:3306/javadb";
        String usuario="root";
-       String clave="mysql2017";
+       String clave="frank3194985608";
         try {
             conexion=DriverManager.getConnection(url,usuario,clave);
-            System.out.println("Por fin");
-            String cadena= "INSERT INTO ejemplo (idejemplo,dato) VALUES (1,1)";
+            System.out.println("Por fin llegue");
+            String cadena= "INSERT INTO ejemplo (idejemplo,dato) VALUES (2,3)";
             //1. cREAR OBJETO
             Statement sentencia;
             sentencia= conexion.createStatement();
@@ -27,6 +27,7 @@ public class Ejemplo {
         } catch (SQLException ex) {
             Logger.getLogger(Ejemplo.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex);
+            ex.getErrorCode();
         }
         
        
